@@ -17,9 +17,8 @@ var twoSum = function (nums, target) {
   // ================ Two solution ============ o(n)
   obj = {};
   for (let i = 0; i < nums.length; i++) {
-    const match = target - nums[i];
+    const match = target - nums[i];  
     if (match in obj) {
-      console.log([i, obj[match]]);
       return [obj[match] , i];
     }
     obj[nums[i]] = i;
